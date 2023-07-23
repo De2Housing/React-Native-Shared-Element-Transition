@@ -1,5 +1,12 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+Demo for Shared Element Transition using [**Reanimated 3**](https://docs.swmansion.com/react-native-reanimated/docs/) 
+
+
+[Demo.webm](https://github.com/De2Housing/React-Native-Shared-Element-Transition/assets/100563401/d49a938f-f6f1-4dad-b51f-21efaff38a30)
+
+
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
