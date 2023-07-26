@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import Animated, {SharedTransition, withTiming} from 'react-native-reanimated';
 
-const Screen1 = () => {
+const BorderRadiusExampleScreen2 = () => {
   const navigation = useNavigation();
 
   const onBackPress = useCallback(() => {
@@ -21,45 +21,40 @@ const Screen1 = () => {
   });
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <StatusBar />
       <View>
+        <View>
+          <Pressable onPress={onBackPress}>
+            <Text text={'Back'} />
+          </Pressable>
+          <Text text={'Border Example Screen 1'} />
+        </View>
         <Pressable
           onPress={() => {
             navigation.navigate('BorderRadiusExampleScreen1');
           }}>
-          <Text style={{ marginBottom: 10 }} >{'View Border Radius Example'}</Text>
-        </Pressable>
-        <Pressable
-          onPress={() => {
-            navigation.navigate('Screen2');
-          }}>
           <Animated.View
             style={{
-              height: 400,
-              width: 250,
+              height: 100,
+              width: 100,
               backgroundColor: 'red',
               justifyContent: 'center',
               alignItems: 'center',
+              borderRadius: 32,
+              padding: 5,
             }}
             sharedTransitionTag="animTag"
             // sharedTransitionStyle={transition}
           >
-            <Animated.Text
-              sharedTransitionTag="insideTextTag"
-              style={{height: 60, width: 60, color: 'white'}}>
-              {'Screen1'}
-            </Animated.Text>
+             <Text style={{flex: 1, color: 'white', textAlignVertical: 'center', textAlign: 'center'}}>
+              {'Border Radius 32'}
+            </Text>
           </Animated.View>
         </Pressable>
-        <Animated.Text
-          sharedTransitionTag="textTag"
-          style={{height: 60, width: 60, backgroundColor: 'blue'}}>
-          {'Screen1'}
-        </Animated.Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default memo(Screen1);
+export default memo(BorderRadiusExampleScreen2);
