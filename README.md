@@ -10,6 +10,9 @@ Demo for [**Shared Element Transition**](https://docs.swmansion.com/react-native
 
 [Demo.webm](https://github.com/De2Housing/React-Native-Shared-Element-Transition/assets/100563401/d49a938f-f6f1-4dad-b51f-21efaff38a30)
 
+Border Radius Example (New in Reanimated v3.4.0)
+
+[SharedElementTransitionDemo2.webm](https://github.com/De2Housing/React-Native-Shared-Element-Transition/assets/100563401/b4c1ccfc-8288-41cf-a5c4-7e762eeb0c34)
 
 
 # Getting Started
